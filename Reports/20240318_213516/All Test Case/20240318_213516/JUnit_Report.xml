@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="All Test Case" time="8.341" tests="3" failures="0" errors="0">
+   <testsuite name="All Test Case" tests="3" failures="0" errors="0" time="8.341" skipped="0" timestamp="18-03-2024T21:35:23" hostname="flp-9-rickynugroho - 192.168.1.6" id="Test Suites/All Test Case">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/flp-9-rickynugroho/Documents/Fit hub/Fit hub Test/Reports/20240318_213516/All Test Case/20240318_213516"/>
+         <property name="logFiles" value="/Users/flp-9-rickynugroho/Documents/Fit hub/Fit hub Test/Reports/20240318_213516/All Test Case/20240318_213516/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="flp-9-rickynugroho - 192.168.1.6"/>
+         <property name="hostAddress" value="192.168.1.6"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.3.1.212"/>
+      </properties>
+      <testcase name="Test Cases/Success Edit user" time="7.077" classname="Test Cases/Success Edit user" status="PASSED">
+         <system-out><![CDATA[18-03-2024T21:35:23 - [TEST_CASE][PASSED] - Test Cases/Success Edit user: Test Cases/Success Edit user
+
+18-03-2024T21:35:23 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Update user")): Send request successfully
+
+18-03-2024T21:35:30 - [MESSAGE][INFO] - HAR: /Users/flp-9-rickynugroho/Documents/Fit hub/Fit hub Test/Reports/20240318_213516/All Test Case/20240318_213516/requests/main/0.har
+
+18-03-2024T21:35:30 - [MESSAGE][PASSED] - Send request successfully
+
+18-03-2024T21:35:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+18-03-2024T21:35:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-03-2024T21:35:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "morpheus"): Verify element property value successfully
+
+18-03-2024T21:35:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-03-2024T21:35:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "job", "zion resident"): Verify element property value successfully
+
+18-03-2024T21:35:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-03-2024T21:35:30 - [TEST_STEP][PASSED] - containsString(response, "updatedAt", false): Check contain string successfully
+
+18-03-2024T21:35:30 - [MESSAGE][PASSED] - Check contain string successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success Create a new user" time="0.801" classname="Test Cases/Success Create a new user" status="PASSED">
+         <system-out><![CDATA[18-03-2024T21:35:30 - [TEST_CASE][PASSED] - Test Cases/Success Create a new user: Test Cases/Success Create a new user
+
+18-03-2024T21:35:30 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Create user")): Send request successfully
+
+18-03-2024T21:35:31 - [MESSAGE][INFO] - HAR: /Users/flp-9-rickynugroho/Documents/Fit hub/Fit hub Test/Reports/20240318_213516/All Test Case/20240318_213516/requests/main/1.har
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Send request successfully
+
+18-03-2024T21:35:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-03-2024T21:35:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "morpheus"): Verify element property value successfully
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-03-2024T21:35:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "job", "leader"): Verify element property value successfully
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+18-03-2024T21:35:31 - [TEST_STEP][PASSED] - containsString(response, "createdAt", false): Check contain string successfully
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Check contain string successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Verify User First Name" time="0.332" classname="Test Cases/Verify User First Name" status="PASSED">
+         <system-out><![CDATA[18-03-2024T21:35:31 - [TEST_CASE][PASSED] - Test Cases/Verify User First Name: Test Cases/Verify User First Name
+
+18-03-2024T21:35:31 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET user by id")): Send request successfully
+
+18-03-2024T21:35:31 - [MESSAGE][INFO] - HAR: /Users/flp-9-rickynugroho/Documents/Fit hub/Fit hub Test/Reports/20240318_213516/All Test Case/20240318_213516/requests/main/2.har
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Send request successfully
+
+18-03-2024T21:35:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, successCode): Verify response status code successfully
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Verify response status code successfully
+
+18-03-2024T21:35:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Janet"): Verify element property value successfully
+
+18-03-2024T21:35:31 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[18-03-2024T21:35:23 - [TEST_SUITE][PASSED] - All Test Case: Test Cases/Verify User First Name]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

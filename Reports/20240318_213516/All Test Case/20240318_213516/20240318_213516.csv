@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+All Test Case,,,,18-03-2024 21:35:23,18-03-2024 21:35:31,8.341s,PASSED
+,,,,,,,
+Test Cases/Success Edit user,,,,18-03-2024 21:35:23,18-03-2024 21:35:30,7.077s,PASSED
+"response = sendRequest(findTestObject(""Update user""))",,,,18-03-2024 21:35:23,18-03-2024 21:35:30,6.851s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,18-03-2024 21:35:30,18-03-2024 21:35:30,0.019s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""morpheus"")",,,,18-03-2024 21:35:30,18-03-2024 21:35:30,0.087s,PASSED
+"verifyElementPropertyValue(response, ""job"", ""zion resident"")",,,,18-03-2024 21:35:30,18-03-2024 21:35:30,0.016s,PASSED
+"containsString(response, ""updatedAt"", false)",,,,18-03-2024 21:35:30,18-03-2024 21:35:30,0.012s,PASSED
+,,,,,,,
+Test Cases/Success Create a new user,,,,18-03-2024 21:35:30,18-03-2024 21:35:31,0.801s,PASSED
+"response = sendRequest(findTestObject(""Create user""))",,,,18-03-2024 21:35:30,18-03-2024 21:35:31,0.680s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.006s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""morpheus"")",,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.019s,PASSED
+"verifyElementPropertyValue(response, ""job"", ""leader"")",,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.016s,PASSED
+"containsString(response, ""createdAt"", false)",,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.004s,PASSED
+,,,,,,,
+Test Cases/Verify User First Name,,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.332s,PASSED
+"response = sendRequest(findTestObject(""GET user by id""))",,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.228s,PASSED
+"verifyResponseStatusCode(response, successCode)",,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.003s,PASSED
+"verifyElementPropertyValue(response, ""data.first_name"", ""Janet"")",,,,18-03-2024 21:35:31,18-03-2024 21:35:31,0.011s,PASSED
